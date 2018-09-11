@@ -75,143 +75,6 @@ a, a:hover {
   }
 }
 
-.invert {
-  color: $white;
-}
-
-.bold {
-  font-weight: 700;
-}
-
-.green-color {
-  color: $blue;
-}
-.grey-color {
-  color: $grey;
-}
-
-div {
-
-  &.black {
-    background: $black;
-  }
-
-  &.green-color {
-    background: $blue;
-  }
-}
-
-.padding {
-
-  &-top {
-
-    &-20 {
-      padding-top: 20px;
-    }
-
-    &-30 {
-      padding-top: 30px;
-    }
-  }
-
-  &-bottom {
-
-    &-20 {
-      padding-bottom: 20px;
-    }
-
-    &-30 {
-      padding-bottom: 30px;
-    }
-  }
-}
-
-.margin-auto {
-  margin: auto;
-}
-
-.relative {
-  position: relative;
-}
-
-.absolute {
-  position: absolute;
-}
-
-.flex {
-  display: flex;
-  height: -webkit-fill-available;
-
-  @media screen and (max-width: 767px) {
-    height: auto;
-    padding-top: 20px;
-    padding-bottom: 20px;
-  }
-
-  &.center {
-    justify-content: center;
-  }
-
-  &.column {
-    flex-direction: column;
-
-    &.reverse {
-      flex-direction: column-reverse;
-    }
-  }
-  &.row {
-    flex-direction: row;
-
-    &.reverse {
-      flex-direction: row-reverse;
-    }
-  }
-}
-
-.navbar-default .navbar-nav > .active > a,
-.navbar-default .navbar-nav > .active > a:focus {
-  color: $white;
-  background-color: $blue;
-  transition: .5s;
-}
-
-.navbar-nav>li>a {
-
-  @media screen and (max-width: 767px) {
-    text-align: center;
-  }
-}
-
-.navbar-default .navbar-nav > .active > a:hover {
-  color: $white;
-  background-color: #449d44;
-  border-color: #398439;
-  transition: .5s;
-}
-button.btn, a.btn {
-  padding-left: 30px;
-  padding-right: 30px;
-  width: fit-content;
-  width: -moz-max-content;
-  border-bottom: 3px solid rgba(0,0,0,.25);
-  margin-top: 20px;
-  margin-bottom: 20px;
-  text-transform: uppercase;
-  font-weight: 700;
-  font-size: 16px;
-  padding-top: 12px;
-
-@media  screen and (max-width: 767px) {
-  font-size: 13px;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
-  & i.fa {
-    margin-right: 10px;
-  }
-}
-
 ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
   color: #ddd;
 }
@@ -226,12 +89,6 @@ button.btn, a.btn {
 }
 .animate, .animate:hover {
   transition: .5s;
-}
-.hover:hover {
-  
-  &.invert {
-    color: $blue;
-  }
 }
 
 .jcarousel-wrapper {
@@ -357,15 +214,5 @@ button.btn, a.btn {
     -webkit-transform: scale(1.05);
     -o-transform: scale(1.05);
     transform: scale(1.05);
-  }
-}
-
-
-.center {
-
-  @media  screen and (max-width: 767px) {
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
   }
 }
