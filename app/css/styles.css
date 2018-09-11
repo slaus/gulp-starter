@@ -46,7 +46,7 @@ input:focus, textarea, a, button {
   outline: none !important; }
 
 a, a:hover {
-  color: #9bd9fb; }
+  color: #00bbb5; }
 
 .clearfix:after, .clearfix:before {
   content: "";
@@ -65,7 +65,7 @@ a, a:hover {
   color: #ffffff;
   width: 50px;
   height: 50px;
-  background: #9bd9fb;
+  background: #00bbb5;
   text-transform: uppercase;
   position: fixed;
   right: 30px;
@@ -77,7 +77,7 @@ a, a:hover {
   display: none;
   z-index: 999; }
   #back-to-top:hover {
-    background: #9bd9fb;
+    background: #00bbb5;
     text-decoration: none; }
 
 ::-webkit-input-placeholder {
@@ -175,7 +175,7 @@ a, a:hover {
   height: 14px;
   width: 14px;
   line-height: 10px;
-  background: #9bd9fb;
+  background: #00bbb5;
   color: #4E443C;
   border-radius: 10px;
   text-indent: -9999px;

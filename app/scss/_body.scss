@@ -31,7 +31,7 @@ input:focus, textarea, a, button {
 }
 
 a, a:hover {
-  color: $blue;
+  color: $green;
 }
 
 .clearfix {
@@ -57,7 +57,7 @@ a, a:hover {
   color: $white;
   width: 50px;
   height: 50px;
-  background: $blue;
+  background: $green;
   text-transform: uppercase;
   position: fixed;
   right: 30px;
@@ -70,7 +70,7 @@ a, a:hover {
   z-index: 999;
 
   &:hover {
-    background: $blue;
+    background: $green;
     text-decoration: none;
   }
 }
@@ -186,7 +186,7 @@ a, a:hover {
   width: 14px;
   line-height: 10px;
 
-  background: $blue;
+  background: $green;
   color: #4E443C;
   border-radius: 10px;
   text-indent: -9999px;

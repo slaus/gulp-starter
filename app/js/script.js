@@ -19,6 +19,7 @@ $('#back-to-top').click(function () {
 
 //Carousel responsive
 $(function () {
+
     var jcarousel = $('.jcarousel');
 
     jcarousel
@@ -45,37 +46,7 @@ $(function () {
             }
         })
         .jcarouselAutoscroll({
-            interval: 10000,
-            target: '+=1',
-            autostart: true,
-        })
-        .on('mouseover', function (e) {
-            $(this).jcarouselAutoscroll('stop');
-        })
-        .on('mouseout', function (e) {
-            $(this).jcarouselAutoscroll('start');
-        });
-
-    var jcarousel = $('.jcarousel.work');
-
-    jcarousel
-        .on('jcarousel:reload jcarousel:create', function () {
-            var carousel = $(this),
-                width = carousel.innerWidth();
-            carousel.jcarousel('items').css('width', Math.ceil(width) + 'px');
-        })
-        .jcarousel({
-            wrap: 'circular',
-            animation: {
-                duration: 1000,
-                speed: 1000,
-                easing: 'linear',
-                complete: function () {
-                }
-            }
-        })
-        .jcarouselAutoscroll({
-            interval: 10000,
+            interval: 8000,
             target: '+=1',
             autostart: true,
         })
@@ -113,24 +84,13 @@ $(function () {
             }
         });
 
-    $(function () {
-// Question handler
-        $('li.question').on('click', function () {
-
-            // gets next element
-            // opens answer of selected question
-            $(this).next().slideToggle(500)
-
-            // selects all other answers and slides up any open answer
-                .siblings('li.answer').slideUp();
-
-            //Grab img from clicked question
-            var caret = $(this).find('.caret');
-            //Remove Rotate class from all images except the active
-            $('.caret').not(caret).removeClass('rotate');
-            //toggle rotate class
-            caret.toggleClass('rotate');
+//Match Height
+    $(function() {
+        $('.item').matchHeight({
+            byRow: true,
+            property: 'height',
+            target: null,
+            remove: false
         });
     });
-
 });
