@@ -33,6 +33,11 @@ $ npm init
 ```bash
 $ npm install gulp --save-dev
 ```
+! If we have Error: gulp.hasTask is not a function
+# For anyone that's wondering, I found that there was a breaking change that was introduced in Gulp version 4.0. To fix this, I did the following:
+```bash
+$ npm install --save-dev gulp@3.9.1
+```
 ### clone repository
 
 ```bash
