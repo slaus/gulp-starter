@@ -108,6 +108,18 @@ a, a:hover {
   }
 }
 
+/* Костыль для Safari*/
+.row:before, .row:after {
+content:'';
+display:block;
+width:100%;
+height:0;
+}
+.row:after {
+clear:both;
+}
+/* Костыль для Safari*/
+
 .jcarousel-wrapper {
   margin: 20px auto;
   position: relative;
