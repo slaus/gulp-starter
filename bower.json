@@ -1,5 +1,5 @@
 {
-  "name": "npm-bower-starter-project",
+  "name": "gulp-starter",
   "description": "",
   "main": "index.js",
   "authors": [
@@ -17,7 +17,7 @@
   "dependencies": {
     "normalize.css": "*",
     "jquery": "2.*",
-	"bootstrap": "4.0",
-	"components-font-awesome": "4.7.0"
+    "bootstrap": "4.0",
+    "components-font-awesome": "4.7.0"
   }
 }
