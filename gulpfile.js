@@ -1,16 +1,17 @@
-var gulp = require('gulp');
-var sass = require('gulp-sass');
-var autoprefixer = require('gulp-autoprefixer');
-var sourcemaps = require('gulp-sourcemaps');
-var browserSync = require('browser-sync');
-var useref = require('gulp-useref');
-var uglify = require('gulp-uglify');
-var gulpIf = require('gulp-if');
-var cssnano = require('gulp-cssnano');
-var imagemin = require('gulp-imagemin');
-var cache = require('gulp-cache');
-var del = require('del');
-var runSequence = require('run-sequence');
+var gulp = require('gulp'),
+    sass = require('gulp-sass'),
+    autoprefixer = require('gulp-autoprefixer'),
+    sourcemaps = require('gulp-sourcemaps'),
+    browserSync = require('browser-sync'),
+    useref = require('gulp-useref'),
+    uglify = require('gulp-uglify'),
+    gulpIf = require('gulp-if'),
+    cssnano = require('gulp-cssnano'),
+    imagemin = require('gulp-imagemin'),
+    cache = require('gulp-cache'),
+    del = require('del'),
+    runSequence = require('run-sequence'),
+    rigger = require('gulp-rigger');
 
 // Basic Gulp task syntax
 gulp.task('hello', function() {
@@ -62,7 +63,8 @@ gulp.task('autoprefixer', function () {
 gulp.task('useref', function() {
 
   return gulp.src('app/*.html')
-    .pipe(useref())
+    .pipe(rigger()) //Прогоним через rigger. //= template/footer.html
+    .pipe(useref()) 
     .pipe(gulpIf('*.js', uglify()))
     .pipe(gulpIf('*.css', cssnano()))
     .pipe(gulp.dest('dist'));
